@@ -4,9 +4,16 @@
 		padding: 0;
 	}
 
+
+
+a{
+	text-decoration: none;
+}
+
 header {
 	background-color: #fbfbfb;
 	height: 760px;
+	overflow: hidden;
 }
 
 .fixed-container {
@@ -122,7 +129,7 @@ h3 {
 	align-items: center;
 }
 
-.services__headline{
+.headline{
 	font-family: Tahoma;
 	font-weight: bold;
 	font-size: 54px;
@@ -146,9 +153,6 @@ h3 {
 
 }
 
-.services__img{
-
-}
 
 .services__tittle{
 	font-family: Tahoma;
@@ -156,4 +160,75 @@ h3 {
 	font-size: 20px;
 	color: #8993ad;
 	text-align: center;
+}
+
+.work__exempl{
+	width: 100%;
+	height: 860px;
+	background-color: #fbfbfb;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+
+.work__exempl__list{
+	width: 1170px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.work__exempl__list li a{
+	width: 370px;
+	height: 350px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+
+.work__exempl__tittle{
+	font-family: Tahoma;
+	font-weight: 400;
+	font-size: 20px;
+	color: #8993ad;
+	text-align: center;
+}
+
+.work__exempl__tittle:hover{
+	color: #D01F1F;
+}
+
+.banner{
+	width: 100%;
+	height: 360px;
+	background-color: #ff4e2e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-family: Tahoma;
+}
+
+.banner h2{
+	width: 1000px;
+	font-size: 45px;
+	font-weight: bold;
+	padding-left: 100px;
+}
+
+.banner p{
+	
+	width: 1000px;
+	font-size: 18px;
+	padding-left: 100px;
+	margin-top: 40px;
 }
