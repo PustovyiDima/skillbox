@@ -1,13 +1,91 @@
 * {
-		font-family: Arial;
-		margin: 0;
-		padding: 0;
-	}
-
-
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s all;
+	outline: none;
+}
 
 a{
 	text-decoration: none;
+}
+
+
+
+.form__layout{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50,0.8);
+	display: none;	
+	justify-content: center;
+	align-items: center;
+
+}
+
+.show__order__form{
+
+}
+
+.order__form{
+	width: 300px;	
+	background-color: #fff;
+	padding: 40px;
+	position: relative;
+}
+
+.order__form label{
+	display: block;
+}
+
+.order__form label input{
+	display: block;
+	width: 100%;
+	margin: 10px 0 15px;
+	font-size: 22px;
+	border-radius: 5px;
+	border: 1px solid #ff6f2a;
+	padding-left: 15px;
+	
+}
+
+.order__form h3{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.button__container{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.orrange__button{
+	border: 0;
+	padding: 10px 30px;
+	background-color: #ff6f2a;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.orrange__button:hover{
+	background-color: #ED6727;
+}
+
+.close__button{
+	width: 30px;
+	height: 30px;
+	background-image: url(./img/criss-cross.png);
+	position: absolute;
+	right: 20px;
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	background-position: center;
+}
+
+.close__button:hover{
+	background-image: url(./img/quit.png);
 }
 
 header {
@@ -73,8 +151,13 @@ nav a:hover {
 	color: #fc557c;
 	background-color: white;
 	cursor: pointer;
+	border-radius: 5px;
 }
-
+.order-call:focus,.order-call:hover{
+	border-color:  #710821;
+	color: #710821;
+	border-radius: 5px;
+}
 .title-container {
 	width: 1000px;
 	display: flex;
@@ -111,12 +194,12 @@ h3 {
 	border-radius: 5px;
 }
 
-.more__btn:hover{
+.more__btn:hover,.more__btn:focus{
 	border: 1px solid #D01F1F;
 	color: white;
 	background-color: #D01F1F;
 	cursor: pointer;
-
+	border-radius: 5px;
 }
 
 .services{
@@ -226,7 +309,7 @@ h3 {
 }
 
 .banner p{
-	
+
 	width: 1000px;
 	font-size: 18px;
 	padding-left: 100px;
